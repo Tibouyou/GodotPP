@@ -45,8 +45,7 @@ jobs:
       # Configure CMake
       - name: Configure CMake
         run: |
-          cmake -B build -G Ninja \
-            -DCMAKE_BUILD_TYPE=Release
+          cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
 
       # Build the Extension (Includes Rust compilation via Corrosion)
       - name: Build GDExtension
